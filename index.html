@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitchat.com</title>
+
+    
+    <!-- This helps us to joint client file to index file -->
+    <script defer src="/socket.io/socket.io.js"></script>  <!-- Updated the port to 3000 -->
+    <script defer src="/public/JS/client.js"></script>
+    <link rel="stylesheet" href="/public/css/c.css">
+
+</head>
+<body>
+    <nav class="nav">
+        <img class="image" src="What.png" alt="">
+        <title>Chitchat.com</title>
+    </nav>    
+    <div class="contaioner">
+        <!-- <div class="messw right">How are you</div>
+        <div class="messw left">I am Fine</div> -->
+    </div>
+    <div class="submit">
+        <form action="#" id="send-con">
+            <input type="text" name="messwInp" id="messwInp" placeholder="Start Chatting Hear!!!!" required>
+            <button class="btn" type="submit" aria-label="Submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 9H6M9 12H4M9 15H6M12.9825 7.61408L20 12L12.9825 16.3859C12.6108 16.6183 12.1412 16.2938 12.2272 15.8639L13 12L12.2272 8.13613C12.1412 7.70625 12.6108 7.38173 12.9825 7.61408Z" stroke="#464455" stroke-linecap="round" stroke-linejoin="round"/>                    </svg>
+            </button>
+        </form>
+
+        <form id="submit" class="formImg" enctype="multipart/form-data">
+            <input type="file" id="imgInp" accept="image/*" />
+            <button type="submit" id="suu">Send Image</button>
+        </form>
+    </div>
+    
+</body>
+</html>
